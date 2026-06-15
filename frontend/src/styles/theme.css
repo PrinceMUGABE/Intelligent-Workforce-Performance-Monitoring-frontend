@@ -1,0 +1,140 @@
+/* src/styles/theme.css - UPDATED */
+/* Remove: @custom-variant dark (&:is(.dark *)); */
+
+:root {
+  --font-size: 16px;
+  --background: #ffffff;
+  --foreground: #030213;
+  --card: #ffffff;
+  --card-foreground: #030213;
+  --popover: #ffffff;
+  --popover-foreground: #030213;
+  --primary: #030213;
+  --primary-foreground: #ffffff;
+  --secondary: #f0f0f5;
+  --secondary-foreground: #030213;
+  --muted: #ececf0;
+  --muted-foreground: #717182;
+  --accent: #e9ebef;
+  --accent-foreground: #030213;
+  --destructive: #d4183d;
+  --destructive-foreground: #ffffff;
+  --border: rgba(0, 0, 0, 0.1);
+  --input: transparent;
+  --input-background: #f3f3f5;
+  --switch-background: #cbced4;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --chart-1: #a16207;
+  --chart-2: #0d9488;
+  --chart-3: #3b82f6;
+  --chart-4: #f59e0b;
+  --chart-5: #f97316;
+  --radius: 0.625rem;
+  --sidebar: #fafafa;
+  --sidebar-foreground: #030213;
+  --sidebar-primary: #030213;
+  --sidebar-primary-foreground: #fafafa;
+  --sidebar-accent: #f5f5f5;
+  --sidebar-accent-foreground: #333333;
+  --sidebar-border: #e5e5e5;
+  --sidebar-ring: #d4d4d8;
+}
+
+.dark {
+  --background: #030213;
+  --foreground: #ffffff;
+  --card: #030213;
+  --card-foreground: #ffffff;
+  --popover: #030213;
+  --popover-foreground: #ffffff;
+  --primary: #ffffff;
+  --primary-foreground: #030213;
+  --secondary: #333333;
+  --secondary-foreground: #ffffff;
+  --muted: #333333;
+  --muted-foreground: #a1a1aa;
+  --accent: #333333;
+  --accent-foreground: #ffffff;
+  --destructive: #7f1d1d;
+  --destructive-foreground: #fca5a5;
+  --border: #333333;
+  --input: #333333;
+  --ring: #52525b;
+  --chart-1: #6366f1;
+  --chart-2: #10b981;
+  --chart-3: #f59e0b;
+  --chart-4: #8b5cf6;
+  --chart-5: #ef4444;
+  --sidebar: #1a1a1a;
+  --sidebar-foreground: #ffffff;
+  --sidebar-primary: #6366f1;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #333333;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #333333;
+  --sidebar-ring: #52525b;
+}
+
+/* Remove the @theme inline section and move to tailwind.config.js */
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+  
+  *:focus-visible {
+    outline-color: color-mix(in srgb, var(--ring) 50%, transparent);
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+  }
+
+  html {
+    font-size: var(--font-size);
+  }
+
+  h1 {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: 1.25rem; /* text-xl */
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  h3 {
+    font-size: 1.125rem; /* text-lg */
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  h4 {
+    font-size: 1rem; /* text-base */
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  label {
+    font-size: 1rem;
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  button {
+    font-size: 1rem;
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  input {
+    font-size: 1rem;
+    font-weight: var(--font-weight-normal);
+    line-height: 1.5;
+  }
+}

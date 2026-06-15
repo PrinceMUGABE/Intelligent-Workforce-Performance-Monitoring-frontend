@@ -1,0 +1,8 @@
+/* src/styles/index.css */
+@import './fonts.css';
+@import './theme.css';
+
+/* Use Tailwind v3 directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
